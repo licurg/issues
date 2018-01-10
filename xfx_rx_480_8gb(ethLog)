@@ -1,0 +1,454 @@
+15:29:18:126	fd8	args: 
+15:29:18:126	fd8	
+15:29:18:126	fd8	ЙНННННННННННННННННННННННННННННННННННННННННННННННННННННННННННННННН»
+15:29:18:142	fd8	є        Claymore's Dual ETH + DCR/SC/LBC GPU Miner v7.3         є
+15:29:18:142	fd8	ИННННННННННННННННННННННННННННННННННННННННННННННННННННННННННННННННј
+15:29:18:142	fd8	
+15:29:18:345	fd8	ETH: 5 pools are specified
+15:29:18:345	fd8	Main Ethereum pool is eth-eu1.nanopool.org:9999
+15:29:18:345	fd8	DCR: 5 pools are specified
+15:29:18:345	fd8	Main Decred pool is sia-eu1.nanopool.org:7777
+15:29:18:892	fd8	OpenCL platform: Intel(R) OpenCL
+15:29:18:892	fd8	OpenCL platform: AMD Accelerated Parallel Processing
+15:29:18:892	fd8	OpenCL initializing...
+
+15:29:18:892	fd8	AMD Cards available: 1 
+15:29:18:892	fd8	GPU #0: Ellesmere, 8192 MB available, 36 compute units
+15:29:18:892	fd8	GPU #0 recognized as Radeon RX 480
+15:29:18:892	fd8	POOL/SOLO version
+15:29:18:892	fd8	b240 
+15:29:18:892	fd8	Platform: Windows
+15:29:18:939	fd8	start building OpenCL program...
+15:29:28:939	fd8	done
+15:29:28:939	fd8	GPU #0: set -etha as 0 (ETH algo for fast cards)
+15:29:28:939	fd8	cudaGetDeviceCount failed (35, CUDA driver version is insufficient for CUDA runtime version), probably no CUDA devices
+15:29:28:939	fd8	No NVIDIA CUDA GPUs detected.
+15:29:28:939	fd8	Total cards: 1 
+15:29:28:955	fd8	No NVIDIA cards in the list, NVML library will not be used.
+15:29:28:971	13bc	ETH: Stratum - connecting to 'eth-eu1.nanopool.org' <79.137.82.5> port 9999
+15:29:29:033	13bc	send: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["YOUR_WALLET/YOUR_WORKER/YOUR_EMAIL", "x"], "id": 2, "method": "eth_submitLogin"}
+
+15:29:29:033	13bc	ETH: Stratum - Connected (eth-eu1.nanopool.org:9999)
+15:29:29:080	fd8	DUAL MINING MODE ENABLED: ETHEREUM+DECRED
+
+15:29:29:080	fd8	ETH: eth-proxy stratum mode
+15:29:29:080	fd8	Watchdog enabled
+15:29:29:080	fd8	Remote management is enabled on port 3333
+15:29:29:080	fd8	
+
+15:29:29:096	13c4	 DCR: Stratum - connecting to 'sia-eu1.nanopool.org' <217.182.65.224> port 7777
+15:29:29:127	13bc	got 282 bytes
+15:29:29:127	13bc	buf: {"jsonrpc":"2.0","id":2,"result":true}
+{"jsonrpc":"2.0","id":0,"result":["0x861aa3e1b285c245dd3156d764d3fbf3e3add0e5b49f94273af3a6932f6fc1eb","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:29:29:127	13bc	parse packet: 38
+15:29:29:127	13bc	ETH: Authorized
+15:29:29:127	13bc	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:29:29:127	13bc	remove first packet 243
+15:29:29:127	13bc	new buf size: 243
+15:29:29:127	13bc	parse packet: 242
+15:29:29:127	13bc	eth: job changed
+15:29:29:127	13bc	new buf size: 0
+15:29:29:174	13c4	send: {"id": 1, "method": "mining.subscribe", "params": ["lbc 1.0"]}
+
+15:29:29:174	13c4	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+15:29:29:174	13c4	send: {"id": 2, "method": "mining.authorize", "params": ["YOUR_WALLET/YOUR_WORKER/YOUR_EMAIL","x"]}
+
+15:29:29:189	13c4	 DCR: Stratum - Connected (sia-eu1.nanopool.org:7777)
+15:29:29:205	13bc	got 243 bytes
+15:29:29:205	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0x861aa3e1b285c245dd3156d764d3fbf3e3add0e5b49f94273af3a6932f6fc1eb","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:29:29:205	13bc	parse packet: 242
+15:29:29:205	13bc	eth: job is the same
+15:29:29:205	13bc	new buf size: 0
+15:29:29:221	c90	Setting DAG epoch #162...
+15:29:29:283	13c4	got 338 bytes
+15:29:29:283	13c4	buf: {"jsonrpc":"2.0","id":1,"result":true}
+{"id":6,"jsonrpc":"2.0","params":["0","0x00000000000000056c631fd3cc3967572022b552102b8e3088df625c1ccedb670000000000000000f406565a000000000b15e1f583d9c05fbb909c4ee1871190bada928a5480f4687626d45a97f06c36","0x0000000007547ff5d321871ff4fb4f118b8d13a30a1ff7b317f3c5b20629578a"],"method":"mining.notify"}
+
+15:29:29:283	13c4	parse packet: 38
+15:29:29:283	13c4	 DCR: Failed to get nonce1 in initiate_stratum
+15:29:29:283	13c4	remove first packet 299
+15:29:29:283	13c4	new buf size: 299
+15:29:29:283	13c4	parse packet: 298
+15:29:29:283	13c4	new buf size: 0
+15:29:29:361	13c4	got 338 bytes
+15:29:29:361	13c4	buf: {"jsonrpc":"2.0","id":2,"result":true}
+{"id":6,"jsonrpc":"2.0","params":["1","0x00000000000000056c631fd3cc3967572022b552102b8e3088df625c1ccedb670000000000000000f406565a0000000084439154853b4b3f89266c346ea42c0f51ca4777584d40446d31e384fb9d8c48","0x0000000007547ff5d321871ff4fb4f118b8d13a30a1ff7b317f3c5b20629578a"],"method":"mining.notify"}
+
+15:29:29:361	13c4	parse packet: 38
+15:29:29:361	13c4	 DCR: Authorized
+15:29:29:361	13c4	remove first packet 299
+15:29:29:361	13c4	new buf size: 299
+15:29:29:361	13c4	parse packet: 298
+15:29:29:361	13c4	new buf size: 0
+15:29:29:986	13bc	got 243 bytes
+15:29:29:986	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0x8c0ded211a0a2a4b1bbf8d935611638b87925c5081da671f86af44d86123783d","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:29:29:986	13bc	parse packet: 242
+15:29:29:986	13bc	eth: job changed
+15:29:29:986	13bc	new buf size: 0
+15:29:29:986	13bc	ETH: 01/10/18-15:29:29 - New job from eth-eu1.nanopool.org:9999
+15:29:29:986	13bc	target: 0x000000006df37f67 (diff: 10000MH), epoch #162
+15:29:29:986	13bc	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+15:29:29:986	13bc	ETH: GPU0 0.000 Mh/s
+15:29:29:986	13bc	 DCR - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0
+15:29:29:986	13bc	 DCR: GPU0 0.000 Mh/s
+15:29:31:783	c90	Setting DAG epoch #162 for GPU #0
+15:29:31:799	c90	Create GPU buffer for GPU #0
+15:29:32:096	fd8	Failed to get OverdriveN capabilities 
+15:29:34:065	13c4	checkread timeout
+15:29:35:112	fd8	Failed to get OverdriveN capabilities 
+15:29:37:268	c90	GPU 0 DAG creation time - 5375 ms
+15:29:37:284	c90	Setting DAG epoch #162 for GPU #0 done
+15:29:38:127	fd8	Failed to get OverdriveN capabilities 
+15:29:38:768	13c4	checkread timeout
+15:29:39:143	13bc	ETH: checking pool connection...
+15:29:39:143	13bc	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:29:39:221	13bc	got 243 bytes
+15:29:39:221	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0x8c0ded211a0a2a4b1bbf8d935611638b87925c5081da671f86af44d86123783d","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:29:39:221	13bc	parse packet: 242
+15:29:39:221	13bc	eth: job is the same
+15:29:39:221	13bc	new buf size: 0
+15:29:40:471	13bc	got 243 bytes
+15:29:40:471	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0x9b48b4ad7c6eb77d8e830ceb709f88caa19b16ba27d56781adfd75229d2d83db","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:29:40:471	13bc	parse packet: 242
+15:29:40:471	13bc	eth: job changed
+15:29:40:471	13bc	new buf size: 0
+15:29:40:471	13bc	ETH: 01/10/18-15:29:40 - New job from eth-eu1.nanopool.org:9999
+15:29:40:471	13bc	target: 0x000000006df37f67 (diff: 10000MH), epoch #162
+15:29:40:471	13bc	ETH - Total Speed: 28.032 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+15:29:40:471	13bc	ETH: GPU0 28.032 Mh/s
+15:29:40:471	13bc	 DCR - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0
+15:29:40:471	13bc	 DCR: GPU0 0.000 Mh/s
+15:29:41:143	fd8	Failed to get OverdriveN capabilities 
+15:29:42:961	13c4	got 299 bytes
+15:29:42:961	13c4	buf: {"id":6,"jsonrpc":"2.0","params":["2","0x00000000000000056c631fd3cc3967572022b552102b8e3088df625c1ccedb6700000000000000002f07565a00000000550f88e6d20fefcbe15607568054b990e80905cf552001b208c7964417eeb9a5","0x0000000007547ff5d321871ff4fb4f118b8d13a30a1ff7b317f3c5b20629578a"],"method":"mining.notify"}
+
+15:29:42:961	13c4	parse packet: 298
+15:29:42:961	13c4	new buf size: 0
+15:29:44:148	fd8	Failed to get OverdriveN capabilities 
+15:29:46:242	13bc	got 243 bytes
+15:29:46:242	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0x62979fd54210e16cabf027d47ad27a943ea93129d609cd0326b7ca52d0e1b3ce","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:29:46:242	13bc	parse packet: 242
+15:29:46:242	13bc	eth: job changed
+15:29:46:242	13bc	new buf size: 0
+15:29:46:242	13bc	ETH: 01/10/18-15:29:46 - New job from eth-eu1.nanopool.org:9999
+15:29:46:242	13bc	target: 0x000000006df37f67 (diff: 10000MH), epoch #162
+15:29:46:242	13bc	ETH - Total Speed: 28.037 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+15:29:46:242	13bc	ETH: GPU0 28.037 Mh/s
+15:29:46:242	13bc	 DCR - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0
+15:29:46:242	13bc	 DCR: GPU0 0.000 Mh/s
+15:29:47:164	fd8	Failed to get OverdriveN capabilities 
+15:29:47:664	13c4	checkread timeout
+15:29:49:148	13bc	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1ac1d4f", "0x0000000000000000000000000000000000000000000000000000000004d07814"]}
+
+15:29:49:164	13bc	ETH: checking pool connection...
+15:29:49:164	13bc	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:29:49:320	13bc	got 243 bytes
+15:29:49:320	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0x62979fd54210e16cabf027d47ad27a943ea93129d609cd0326b7ca52d0e1b3ce","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:29:49:320	13bc	parse packet: 242
+15:29:49:320	13bc	eth: job is the same
+15:29:49:320	13bc	new buf size: 0
+15:29:50:180	fd8	Failed to get OverdriveN capabilities 
+15:29:52:367	13c4	checkread timeout
+15:29:53:195	fd8	Failed to get OverdriveN capabilities 
+15:29:56:211	fd8	Failed to get OverdriveN capabilities 
+15:29:57:070	13c4	checkread timeout
+15:29:59:180	13bc	ETH: checking pool connection...
+15:29:59:180	13bc	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:29:59:227	fd8	Failed to get OverdriveN capabilities 
+15:29:59:227	fd8	Failed to get OverdriveN capabilities 
+15:29:59:227	fd8	GPU0 t=0C fan=0%
+15:29:59:227	fd8	em hbt: 0, dm hbt: 30140, fm hbt: 47, 
+15:29:59:227	fd8	watchdog - thread 0, hb time 31
+15:29:59:227	fd8	watchdog - thread 1, hb time 203
+15:29:59:258	13bc	got 243 bytes
+15:29:59:258	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0x62979fd54210e16cabf027d47ad27a943ea93129d609cd0326b7ca52d0e1b3ce","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:29:59:258	13bc	parse packet: 242
+15:29:59:258	13bc	eth: job is the same
+15:29:59:258	13bc	new buf size: 0
+15:29:59:417	13bc	got 243 bytes
+15:29:59:417	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0xea6eb4dbf2c81ce688be9bdd99a0a5debdadb92878a0ea772b80572bf7c3f56f","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:29:59:417	13bc	parse packet: 242
+15:29:59:417	13bc	eth: job changed
+15:29:59:417	13bc	new buf size: 0
+15:29:59:417	13bc	ETH: 01/10/18-15:29:59 - New job from eth-eu1.nanopool.org:9999
+15:29:59:417	13bc	target: 0x000000006df37f67 (diff: 10000MH), epoch #162
+15:29:59:417	13bc	ETH - Total Speed: 28.050 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+15:29:59:417	13bc	ETH: GPU0 28.050 Mh/s
+15:29:59:417	13bc	 DCR - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0
+15:29:59:417	13bc	 DCR: GPU0 0.000 Mh/s
+15:30:01:776	13c4	checkread timeout
+15:30:02:245	fd8	Failed to get OverdriveN capabilities 
+15:30:05:261	fd8	Failed to get OverdriveN capabilities 
+15:30:06:480	13c4	checkread timeout
+15:30:06:480	13c4	 DCR: Job timeout, disconnect, retry in 20 sec...
+15:30:08:277	fd8	Failed to get OverdriveN capabilities 
+15:30:09:152	13bc	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x1ac3137", "0x0000000000000000000000000000000000000000000000000000000004d07814"]}
+
+15:30:09:183	13bc	ETH: checking pool connection...
+15:30:09:183	13bc	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:30:09:324	13bc	got 243 bytes
+15:30:09:324	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0xea6eb4dbf2c81ce688be9bdd99a0a5debdadb92878a0ea772b80572bf7c3f56f","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:30:09:324	13bc	parse packet: 242
+15:30:09:324	13bc	eth: job is the same
+15:30:09:324	13bc	new buf size: 0
+15:30:11:292	fd8	Failed to get OverdriveN capabilities 
+15:30:14:308	fd8	Failed to get OverdriveN capabilities 
+15:30:16:621	13bc	got 243 bytes
+15:30:16:621	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0x454ea2d6f45a246660bf176cea8113314ac12685666e40a20af47304b4ba5bdb","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:30:16:621	13bc	parse packet: 242
+15:30:16:621	13bc	eth: job changed
+15:30:16:621	13bc	new buf size: 0
+15:30:16:621	13bc	ETH: 01/10/18-15:30:16 - New job from eth-eu1.nanopool.org:9999
+15:30:16:621	13bc	target: 0x000000006df37f67 (diff: 10000MH), epoch #162
+15:30:16:621	13bc	ETH - Total Speed: 28.038 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+15:30:16:621	13bc	ETH: GPU0 28.038 Mh/s
+15:30:16:621	13bc	 DCR - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0
+15:30:16:621	13bc	 DCR: GPU0 0.000 Mh/s
+15:30:17:324	fd8	Failed to get OverdriveN capabilities 
+15:30:19:199	13bc	ETH: checking pool connection...
+15:30:19:199	13bc	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:30:19:277	13bc	got 243 bytes
+15:30:19:277	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0x454ea2d6f45a246660bf176cea8113314ac12685666e40a20af47304b4ba5bdb","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:30:19:277	13bc	parse packet: 242
+15:30:19:277	13bc	eth: job is the same
+15:30:19:277	13bc	new buf size: 0
+15:30:20:340	fd8	Failed to get OverdriveN capabilities 
+15:30:23:355	fd8	Failed to get OverdriveN capabilities 
+15:30:24:731	13bc	got 243 bytes
+15:30:24:731	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0xf30ef59c5f5aad8235f2e6b244f1cb7ad3b9fd32fc9fbaa0ab4e95271dd9fc65","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:30:24:731	13bc	parse packet: 242
+15:30:24:731	13bc	eth: job changed
+15:30:24:731	13bc	new buf size: 0
+15:30:24:731	13bc	ETH: 01/10/18-15:30:24 - New job from eth-eu1.nanopool.org:9999
+15:30:24:731	13bc	target: 0x000000006df37f67 (diff: 10000MH), epoch #162
+15:30:24:731	13bc	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+15:30:24:731	13bc	ETH: GPU0 0.000 Mh/s
+15:30:24:731	13bc	 DCR - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0
+15:30:24:731	13bc	 DCR: GPU0 0.000 Mh/s
+15:30:26:371	fd8	Failed to get OverdriveN capabilities 
+15:30:26:496	13c4	 DCR: Stratum - connecting to 'sia-eu1.nanopool.org' <217.182.65.224> port 7777
+15:30:26:559	13c4	send: {"id": 1, "method": "mining.subscribe", "params": ["lbc 1.0"]}
+
+15:30:26:559	13c4	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+15:30:26:559	13c4	send: {"id": 2, "method": "mining.authorize", "params": ["YOUR_WALLET/YOUR_WORKER/YOUR_EMAIL","x"]}
+
+15:30:26:559	13c4	 DCR: Stratum - Connected (sia-eu1.nanopool.org:7777)
+15:30:26:637	13c4	got 338 bytes
+15:30:26:637	13c4	buf: {"jsonrpc":"2.0","id":1,"result":true}
+{"id":6,"jsonrpc":"2.0","params":["0","0x00000000000000056c631fd3cc3967572022b552102b8e3088df625c1ccedb6700000000000000002f07565a000000003d1e3c5a9060e476484939befbd381c90caac3cfb654598ede5a7c93fe8cb0f9","0x0000000007547ff5d321871ff4fb4f118b8d13a30a1ff7b317f3c5b20629578a"],"method":"mining.notify"}
+
+15:30:26:637	13c4	parse packet: 38
+15:30:26:637	13c4	 DCR: Failed to get nonce1 in initiate_stratum
+15:30:26:637	13c4	remove first packet 299
+15:30:26:637	13c4	new buf size: 299
+15:30:26:637	13c4	parse packet: 298
+15:30:26:637	13c4	new buf size: 0
+15:30:26:699	13c4	got 338 bytes
+15:30:26:699	13c4	buf: {"jsonrpc":"2.0","id":2,"result":true}
+{"id":6,"jsonrpc":"2.0","params":["1","0x00000000000000056c631fd3cc3967572022b552102b8e3088df625c1ccedb6700000000000000002f07565a00000000aa42f7f94c502d3f9b0c5274e7a90e8ca2bfc3e793f5036aa56eb777a7680a6b","0x0000000007547ff5d321871ff4fb4f118b8d13a30a1ff7b317f3c5b20629578a"],"method":"mining.notify"}
+
+15:30:26:699	13c4	parse packet: 38
+15:30:26:699	13c4	 DCR: Authorized
+15:30:26:699	13c4	remove first packet 299
+15:30:26:699	13c4	new buf size: 299
+15:30:26:699	13c4	parse packet: 298
+15:30:26:699	13c4	new buf size: 0
+15:30:29:168	13bc	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x0", "0x0000000000000000000000000000000000000000000000000000000004d07814"]}
+
+15:30:29:215	13bc	ETH: checking pool connection...
+15:30:29:215	13bc	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:30:29:340	13bc	got 243 bytes
+15:30:29:340	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0xf30ef59c5f5aad8235f2e6b244f1cb7ad3b9fd32fc9fbaa0ab4e95271dd9fc65","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:30:29:340	13bc	parse packet: 242
+15:30:29:340	13bc	eth: job is the same
+15:30:29:340	13bc	new buf size: 0
+15:30:29:387	fd8	Failed to get OverdriveN capabilities 
+15:30:29:387	fd8	Failed to get OverdriveN capabilities 
+15:30:29:387	fd8	GPU0 t=0C fan=0%
+15:30:29:387	fd8	em hbt: 0, dm hbt: 2890, fm hbt: 15, 
+15:30:29:387	fd8	watchdog - thread 0, hb time 14812
+15:30:29:387	fd8	watchdog - thread 1, hb time 14640
+15:30:31:403	13c4	checkread timeout
+15:30:32:403	fd8	Failed to get OverdriveN capabilities 
+15:30:35:418	fd8	Failed to get OverdriveN capabilities 
+15:30:36:090	13c4	checkread timeout
+15:30:38:433	fd8	Failed to get OverdriveN capabilities 
+15:30:39:230	13bc	ETH: checking pool connection...
+15:30:39:230	13bc	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:30:39:308	13bc	got 243 bytes
+15:30:39:308	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0xf30ef59c5f5aad8235f2e6b244f1cb7ad3b9fd32fc9fbaa0ab4e95271dd9fc65","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:30:39:308	13bc	parse packet: 242
+15:30:39:308	13bc	eth: job is the same
+15:30:39:308	13bc	new buf size: 0
+15:30:40:809	13c4	checkread timeout
+15:30:41:449	fd8	Failed to get OverdriveN capabilities 
+15:30:43:152	13c4	got 299 bytes
+15:30:43:152	13c4	buf: {"id":6,"jsonrpc":"2.0","params":["2","0x00000000000000056c631fd3cc3967572022b552102b8e3088df625c1ccedb6700000000000000006b07565a00000000b0d17e2da8b9b65aff65a92051d1708888352c4baf6126362b4502a7062179d9","0x0000000007547ff5d321871ff4fb4f118b8d13a30a1ff7b317f3c5b20629578a"],"method":"mining.notify"}
+
+15:30:43:152	13c4	parse packet: 298
+15:30:43:152	13c4	new buf size: 0
+15:30:44:465	fd8	Failed to get OverdriveN capabilities 
+15:30:45:840	13bc	got 243 bytes
+15:30:45:840	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0xd9bf19d4ee5c7e80881b60029ce407fa8732bdb1d131f6b9687d6257eccc9784","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:30:45:840	13bc	parse packet: 242
+15:30:45:840	13bc	eth: job changed
+15:30:45:840	13bc	new buf size: 0
+15:30:45:840	13bc	ETH: 01/10/18-15:30:45 - New job from eth-eu1.nanopool.org:9999
+15:30:45:840	13bc	target: 0x000000006df37f67 (diff: 10000MH), epoch #162
+15:30:45:840	13bc	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:01
+15:30:45:840	13bc	ETH: GPU0 0.000 Mh/s
+15:30:45:840	13bc	 DCR - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0
+15:30:45:840	13bc	 DCR: GPU0 0.000 Mh/s
+15:30:47:481	fd8	Failed to get OverdriveN capabilities 
+15:30:47:856	13c4	checkread timeout
+15:30:49:184	13bc	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x0", "0x0000000000000000000000000000000000000000000000000000000004d07814"]}
+
+15:30:49:246	13bc	ETH: checking pool connection...
+15:30:49:246	13bc	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:30:49:356	13bc	got 243 bytes
+15:30:49:356	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0xd9bf19d4ee5c7e80881b60029ce407fa8732bdb1d131f6b9687d6257eccc9784","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:30:49:356	13bc	parse packet: 242
+15:30:49:356	13bc	eth: job is the same
+15:30:49:356	13bc	new buf size: 0
+15:30:50:496	fd8	Failed to get OverdriveN capabilities 
+15:30:52:559	13c4	checkread timeout
+15:30:53:512	fd8	Failed to get OverdriveN capabilities 
+15:30:56:528	fd8	Failed to get OverdriveN capabilities 
+15:30:57:262	13c4	checkread timeout
+15:30:59:106	13bc	got 243 bytes
+15:30:59:106	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0x9e39851f06ece25be38297d7b7d17be5d7f494481a26a1dece41bef40c8fa66c","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:30:59:106	13bc	parse packet: 242
+15:30:59:106	13bc	eth: job changed
+15:30:59:106	13bc	new buf size: 0
+15:30:59:106	13bc	ETH: 01/10/18-15:30:59 - New job from eth-eu1.nanopool.org:9999
+15:30:59:106	13bc	target: 0x000000006df37f67 (diff: 10000MH), epoch #162
+15:30:59:106	13bc	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:01
+15:30:59:106	13bc	ETH: GPU0 0.000 Mh/s
+15:30:59:106	13bc	 DCR - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0
+15:30:59:106	13bc	 DCR: GPU0 0.000 Mh/s
+15:30:59:262	13bc	ETH: checking pool connection...
+15:30:59:262	13bc	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:30:59:341	13bc	got 243 bytes
+15:30:59:341	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0x9e39851f06ece25be38297d7b7d17be5d7f494481a26a1dece41bef40c8fa66c","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:30:59:341	13bc	parse packet: 242
+15:30:59:341	13bc	eth: job is the same
+15:30:59:341	13bc	new buf size: 0
+15:30:59:544	fd8	Failed to get OverdriveN capabilities 
+15:30:59:544	fd8	Failed to get OverdriveN capabilities 
+15:30:59:544	fd8	GPU0 t=0C fan=0%
+15:30:59:544	fd8	em hbt: 0, dm hbt: 33046, fm hbt: 15, 
+15:30:59:544	fd8	watchdog - thread 0, hb time 44968
+15:30:59:544	fd8	watchdog - thread 1, hb time 44796
+15:31:01:966	13c4	checkread timeout
+15:31:01:966	13c4	 DCR: Job timeout, disconnect, retry in 20 sec...
+15:31:02:559	fd8	Failed to get OverdriveN capabilities 
+15:31:05:575	fd8	Failed to get OverdriveN capabilities 
+15:31:08:591	fd8	Failed to get OverdriveN capabilities 
+15:31:09:200	13bc	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x0", "0x0000000000000000000000000000000000000000000000000000000004d07814"]}
+
+15:31:09:278	13bc	ETH: checking pool connection...
+15:31:09:278	13bc	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:31:09:372	13bc	got 243 bytes
+15:31:09:372	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0x9e39851f06ece25be38297d7b7d17be5d7f494481a26a1dece41bef40c8fa66c","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:31:09:372	13bc	parse packet: 242
+15:31:09:372	13bc	eth: job is the same
+15:31:09:372	13bc	new buf size: 0
+15:31:11:607	fd8	Failed to get OverdriveN capabilities 
+15:31:14:622	fd8	Failed to get OverdriveN capabilities 
+15:31:17:638	fd8	Failed to get OverdriveN capabilities 
+15:31:19:295	13bc	ETH: checking pool connection...
+15:31:19:295	13bc	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:31:19:373	13bc	got 243 bytes
+15:31:19:373	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0x9e39851f06ece25be38297d7b7d17be5d7f494481a26a1dece41bef40c8fa66c","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:31:19:373	13bc	parse packet: 242
+15:31:19:373	13bc	eth: job is the same
+15:31:19:373	13bc	new buf size: 0
+15:31:20:654	fd8	Failed to get OverdriveN capabilities 
+15:31:21:982	13c4	 DCR: Stratum - connecting to 'sia-eu1.nanopool.org' <217.182.65.224> port 7777
+15:31:22:045	13c4	send: {"id": 1, "method": "mining.subscribe", "params": ["lbc 1.0"]}
+
+15:31:22:045	13c4	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+15:31:22:045	13c4	send: {"id": 2, "method": "mining.authorize", "params": ["YOUR_WALLET/YOUR_WORKER/YOUR_EMAIL","x"]}
+
+15:31:22:045	13c4	 DCR: Stratum - Connected (sia-eu1.nanopool.org:7777)
+15:31:22:123	13c4	got 338 bytes
+15:31:22:123	13c4	buf: {"jsonrpc":"2.0","id":1,"result":true}
+{"id":6,"jsonrpc":"2.0","params":["0","0x00000000000000056c631fd3cc3967572022b552102b8e3088df625c1ccedb6700000000000000007c07565a0000000065faeb76fc168278fef34141bd0494155fffaa69ba7c1547ded5fcf80dcd5c65","0x0000000007547ff5d321871ff4fb4f118b8d13a30a1ff7b317f3c5b20629578a"],"method":"mining.notify"}
+
+15:31:22:123	13c4	parse packet: 38
+15:31:22:123	13c4	 DCR: Failed to get nonce1 in initiate_stratum
+15:31:22:123	13c4	remove first packet 299
+15:31:22:123	13c4	new buf size: 299
+15:31:22:123	13c4	parse packet: 298
+15:31:22:123	13c4	new buf size: 0
+15:31:22:185	13c4	got 338 bytes
+15:31:22:185	13c4	buf: {"jsonrpc":"2.0","id":2,"result":true}
+{"id":6,"jsonrpc":"2.0","params":["1","0x00000000000000056c631fd3cc3967572022b552102b8e3088df625c1ccedb6700000000000000007c07565a00000000e135b94dee2299076007e5ad90ae613ef7cdf82542f46d2f58c0c3b0c5d1c849","0x0000000007547ff5d321871ff4fb4f118b8d13a30a1ff7b317f3c5b20629578a"],"method":"mining.notify"}
+
+15:31:22:185	13c4	parse packet: 38
+15:31:22:185	13c4	 DCR: Authorized
+15:31:22:185	13c4	remove first packet 299
+15:31:22:185	13c4	new buf size: 299
+15:31:22:185	13c4	parse packet: 298
+15:31:22:185	13c4	new buf size: 0
+15:31:23:670	fd8	Failed to get OverdriveN capabilities 
+15:31:26:685	fd8	Failed to get OverdriveN capabilities 
+15:31:26:889	13c4	checkread timeout
+15:31:29:217	13bc	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x0", "0x0000000000000000000000000000000000000000000000000000000004d07814"]}
+
+15:31:29:311	13bc	ETH: checking pool connection...
+15:31:29:311	13bc	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+15:31:29:389	13bc	got 243 bytes
+15:31:29:389	13bc	buf: {"jsonrpc":"2.0","id":0,"result":["0x9e39851f06ece25be38297d7b7d17be5d7f494481a26a1dece41bef40c8fa66c","0xa92afa474bb50595e467a1722ed7a74fc00b3307de5022d5b76cf979490f2222","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+15:31:29:389	13bc	parse packet: 242
+15:31:29:389	13bc	eth: job is the same
+15:31:29:389	13bc	new buf size: 0
+15:31:29:701	fd8	Failed to get OverdriveN capabilities 
+15:31:29:701	fd8	Failed to get OverdriveN capabilities 
+15:31:29:701	fd8	GPU0 t=0C fan=0%
+15:31:29:701	fd8	em hbt: 0, dm hbt: 7719, fm hbt: 94, 
+15:31:29:701	fd8	watchdog - thread 0, hb time 75125
+15:31:29:701	fd8	WATCHDOG: GPU 0 hangs in OpenCL call, exit
+15:31:29:717	fd8	watchdog - thread 1, hb time 74953
+15:31:29:717	fd8	WATCHDOG: GPU 0 hangs in OpenCL call, exit
+15:31:29:717	fd8	Failed to get OverdriveN capabilities 
+15:31:30:733	fd8	Restarting OK, exit...
+
